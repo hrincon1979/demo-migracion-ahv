@@ -28,8 +28,10 @@ fi
 # ========================
 # Crear archivo de IP persistente
 # ========================
-echo "192.168.1.100" > $ARCHIVO_IP
-chmod 666 $ARCHIVO_IP
+if [ ! -f "$ARCHIVO_IP" ]; then
+  touch "$ARCHIVO_IP"
+  chmod 666 "$ARCHIVO_IP"
+fi
 
 # ========================
 # Crear index.php
