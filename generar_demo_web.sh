@@ -30,7 +30,7 @@ fi
 # ========================
 if [ ! -f "$ARCHIVO_IP" ]; then
   touch "$ARCHIVO_IP"
-  chmod 666 "$ARCHIVO_IP"
+  sudo chmod 666 "$ARCHIVO_IP"
 fi
 
 # ========================
