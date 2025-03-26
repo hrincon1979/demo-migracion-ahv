@@ -3,7 +3,7 @@
 # ========================
 # Solicitar datos al usuario
 # ========================
-read -p "📝 Nombre del cliente: " CLIENTE
+read -p "📝 Nombre del customer: " CLIENTE
 read -p "🌐 URL del logo (formato .jpg/.png): " LOGO_URL
 
 ARCHIVO_IP="/var/www/html/data.txt"
